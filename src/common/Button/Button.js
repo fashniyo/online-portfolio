@@ -10,6 +10,7 @@ const ButtonComponent = ({
   size,
   active = false,
   disabled = false,
+  onClick,
 }) => {
   return (
     <Button
@@ -19,6 +20,7 @@ const ButtonComponent = ({
       size={size}
       active={active}
       disabled={disabled}
+      onClick={onClick}
     >
       {text}
     </Button>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './styles.css'
+import ButtonComponent from '../../../common/Button/Button'
 
 function Square({ onClick, value }) {
   return (
@@ -59,9 +60,10 @@ export const TicTacToe = () => {
         {renderSquare(8)}
       </div>
       <div className="status">{status}</div>
-      <button className="restart" onClick={handleRestart}>
+      <ButtonComponent onClick={handleRestart} text="Restart Game!" />
+      {/* <button className="restart" onClick={handleRestart}>
         Restart Game!
-      </button>
+      </button> */}
     </div>
   )
 }
